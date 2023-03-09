@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(https://source.unsplash.com/1600x900/?cities);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigbox {
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 35px;
+    width: 95%;
+    height: 300px;
+    padding: 50px 30px;
+    color: white;
+    max-width: 450px;
+}
+
+input {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: calc(100% - 60px);
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    transform: 200ms;
+}
+
+input:hover {
+    background-color: rgba(255, 255, 255, .4);
+    transition: 200ms;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, .2);
+    float: right;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.lupa {
+    height: 20px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, .4);
+    transition: 200ms;
+}
+
+.mediumbox {
+    margin-top: 20px;
+}
+
+.cidade {
+    font-size: 22px;
+    text-align: center;
+}
+
+.temp {
+    display: flex;
+    margin-top: 20px;
+    font-size: 19px;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperatura {
+    margin-right: 20px;
+}
+
+.smallbox {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.icone-clima {
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.umidade, .min, .max{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .temp {
+        font-size: 16px;
+        height: 100vh;
+        padding: 10px;
+    }
+}

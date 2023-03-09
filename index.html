@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="cabeca">
+            <input class="input-cidade" type="text" placeholder="Cidade">
+            <button onclick="buscar()">
+                <img class="lupa" src="./assets/search.svg" alt="search-icon"></i>
+            </button>
+        </div>
+        <div class="mediumbox">
+            <h2 class="cidade">Tempo em São Francisco do Sul</h2>
+            <div class="temp">
+                <p>Temperatura:</p>
+                <h2 class="temperatura">29ºC</h2>
+                <p>Sensação:</p>
+                <h2 class="sensacao">32ºC</h2>
+            </div>
+
+            <div class="smallbox">
+                <p class="min">Min: 24ºC</p>
+                <div class="icone-clima">
+                    <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+                    <p class="clima">Ensolarado</p>
+                </div>
+                <p class="umidade">Umidade: 67%</p>
+                <p class="max">Max: 32ºC</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
